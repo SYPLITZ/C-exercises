@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+double radius = 0.0f;
+double area = 0.0f;
+double SurArea = 0.0f;
+double volume = 0.0f;
+const double PI = 3.14159;
+
+printf("Coloque o Radianos: ");
+scanf("%lf", &radius);
+
+area = PI * pow(radius, 2);
+SurArea = 4 * PI * pow(radius, 2);
+volume = (4.0 / 3.0) * PI * pow(radius, 3);
+
+printf("Area: %.2lf\n", area);
+printf("Area superficial: %.2lf\n", SurArea);
+printf("Volume: %.2lf", volume);
